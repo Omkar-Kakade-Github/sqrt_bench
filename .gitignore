@@ -1,0 +1,13 @@
+build/
+cmake-build-*/
+_deps/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.codex
+*.agents

@@ -1,0 +1,83 @@
+Start testing: May 25 21:27 IST
+----------------------------------------------------------
+1/4 Testing: float methods validate against std::sqrt
+1/4 Test: float methods validate against std::sqrt
+Command: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/sqrt_bench_tests" "float methods validate against std::sqrt"
+Directory: /home/blaze/Blaze/Projects/sqrt_bench/build_full
+"float methods validate against std::sqrt" start time: May 25 21:27 IST
+Output:
+----------------------------------------------------------
+Filters: "float methods validate against std::sqrt"
+Randomness seeded to: 4292225403
+===============================================================================
+All tests passed (5040 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"float methods validate against std::sqrt" end time: May 25 21:27 IST
+"float methods validate against std::sqrt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: double methods validate against std::sqrt
+2/4 Test: double methods validate against std::sqrt
+Command: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/sqrt_bench_tests" "double methods validate against std::sqrt"
+Directory: /home/blaze/Blaze/Projects/sqrt_bench/build_full
+"double methods validate against std::sqrt" start time: May 25 21:27 IST
+Output:
+----------------------------------------------------------
+Filters: "double methods validate against std::sqrt"
+Randomness seeded to: 2159318023
+===============================================================================
+All tests passed (5040 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"double methods validate against std::sqrt" end time: May 25 21:27 IST
+"double methods validate against std::sqrt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: float methods reject non-positive and non-finite inputs
+3/4 Test: float methods reject non-positive and non-finite inputs
+Command: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/sqrt_bench_tests" "float methods reject non-positive and non-finite inputs"
+Directory: /home/blaze/Blaze/Projects/sqrt_bench/build_full
+"float methods reject non-positive and non-finite inputs" start time: May 25 21:27 IST
+Output:
+----------------------------------------------------------
+Filters: "float methods reject non-positive and non-finite inputs"
+Randomness seeded to: 350867016
+===============================================================================
+All tests passed (40 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"float methods reject non-positive and non-finite inputs" end time: May 25 21:27 IST
+"float methods reject non-positive and non-finite inputs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: double methods reject non-positive and non-finite inputs
+4/4 Test: double methods reject non-positive and non-finite inputs
+Command: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/sqrt_bench_tests" "double methods reject non-positive and non-finite inputs"
+Directory: /home/blaze/Blaze/Projects/sqrt_bench/build_full
+"double methods reject non-positive and non-finite inputs" start time: May 25 21:27 IST
+Output:
+----------------------------------------------------------
+Filters: "double methods reject non-positive and non-finite inputs"
+Randomness seeded to: 538072471
+===============================================================================
+All tests passed (40 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"double methods reject non-positive and non-finite inputs" end time: May 25 21:27 IST
+"double methods reject non-positive and non-finite inputs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 25 21:27 IST

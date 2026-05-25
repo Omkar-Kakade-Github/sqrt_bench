@@ -1,0 +1,1192 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.17.0-29-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8cdfc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8cdfc.dir/build.make CMakeFiles/cmTC_8cdfc.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH'
+        Building CXX object CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04.1' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8cdfc.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8cdfc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGAeV3J.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 7896445e4990772fdae9dc0659a99266
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8cdfc.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGAeV3J.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8cdfc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cdfc.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8cdfc 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04.1' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8cdfc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8cdfc.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOA0k7W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8cdfc /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8cdfc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8cdfc.'
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8cdfc/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8cdfc.dir/build.make CMakeFiles/cmTC_8cdfc.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EMQypH']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04.1' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8cdfc.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8cdfc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGAeV3J.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04.1) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 7896445e4990772fdae9dc0659a99266]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8cdfc.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGAeV3J.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8cdfc]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cdfc.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8cdfc ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04.1' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-EldibY/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8cdfc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8cdfc.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOA0k7W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8cdfc /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccOA0k7W.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8cdfc] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_8cdfc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/catch2-src/CMake/CatchMiscFunctions.cmake:12 (check_cxx_compiler_flag)"
+      - "build_full/_deps/catch2-src/CMake/CatchMiscFunctions.cmake:120 (add_cxx_flag_if_supported_to_targets)"
+      - "build_full/_deps/catch2-src/src/CMakeLists.txt:352 (add_build_reproducibility_settings)"
+    checks:
+      - "Performing Test HAVE_FLAG__ffile_prefix_map__home_blaze_Blaze_Projects_sqrt_bench_build_full__deps_catch2_src__"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-BHjAbq"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-BHjAbq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/CMake"
+    buildResult:
+      variable: "HAVE_FLAG__ffile_prefix_map__home_blaze_Blaze_Projects_sqrt_bench_build_full__deps_catch2_src__"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-BHjAbq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_75a18/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_75a18.dir/build.make CMakeFiles/cmTC_75a18.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-BHjAbq'
+        Building CXX object CMakeFiles/cmTC_75a18.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_FLAG__ffile_prefix_map__home_blaze_Blaze_Projects_sqrt_bench_build_full__deps_catch2_src__  -ffile-prefix-map=/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/= -o CMakeFiles/cmTC_75a18.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-BHjAbq/src.cxx
+        Linking CXX executable cmTC_75a18
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75a18.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_75a18.dir/src.cxx.o -o cmTC_75a18 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-BHjAbq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:135 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EBhiFZ"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EBhiFZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EBhiFZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cd362/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cd362.dir/build.make CMakeFiles/cmTC_cd362.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EBhiFZ'
+        Building CXX object CMakeFiles/cmTC_cd362.dir/CheckFunctionExists.cxx.o
+        /usr/bin/c++   -DCHECK_FUNCTION_EXISTS=shm_open -o CMakeFiles/cmTC_cd362.dir/CheckFunctionExists.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EBhiFZ/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_cd362
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd362.dir/link.txt --verbose=1
+        /usr/bin/c++  -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_cd362.dir/CheckFunctionExists.cxx.o -o cmTC_cd362  -lrt 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EBhiFZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:184 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-CnNZ1R"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-CnNZ1R"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-CnNZ1R'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed136/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed136.dir/build.make CMakeFiles/cmTC_ed136.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-CnNZ1R'
+        Building CXX object CMakeFiles/cmTC_ed136.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  -Wall -std=c++14   -Wall -o CMakeFiles/cmTC_ed136.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-CnNZ1R/src.cxx
+        Linking CXX executable cmTC_ed136
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed136.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall CMakeFiles/cmTC_ed136.dir/src.cxx.o -o cmTC_ed136 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-CnNZ1R'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:185 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EaUchD"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EaUchD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EaUchD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d26d4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d26d4.dir/build.make CMakeFiles/cmTC_d26d4.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EaUchD'
+        Building CXX object CMakeFiles/cmTC_d26d4.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++14   -Wextra -o CMakeFiles/cmTC_d26d4.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EaUchD/src.cxx
+        Linking CXX executable cmTC_d26d4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d26d4.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra CMakeFiles/cmTC_d26d4.dir/src.cxx.o -o cmTC_d26d4 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-EaUchD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:186 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-OnxKV7"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-OnxKV7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-OnxKV7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_306ef/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_306ef.dir/build.make CMakeFiles/cmTC_306ef.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-OnxKV7'
+        Building CXX object CMakeFiles/cmTC_306ef.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++14   -Wshadow -o CMakeFiles/cmTC_306ef.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-OnxKV7/src.cxx
+        Linking CXX executable cmTC_306ef
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_306ef.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow CMakeFiles/cmTC_306ef.dir/src.cxx.o -o cmTC_306ef 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-OnxKV7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:187 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-T6mQDE"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-T6mQDE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-T6mQDE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_161be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_161be.dir/build.make CMakeFiles/cmTC_161be.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-T6mQDE'
+        Building CXX object CMakeFiles/cmTC_161be.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++14   -Wfloat-equal -o CMakeFiles/cmTC_161be.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-T6mQDE/src.cxx
+        Linking CXX executable cmTC_161be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_161be.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal CMakeFiles/cmTC_161be.dir/src.cxx.o -o cmTC_161be 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-T6mQDE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:188 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-5Jdggd"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-5Jdggd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-5Jdggd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_af553/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_af553.dir/build.make CMakeFiles/cmTC_af553.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-5Jdggd'
+        Building CXX object CMakeFiles/cmTC_af553.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++14   -Wold-style-cast -o CMakeFiles/cmTC_af553.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-5Jdggd/src.cxx
+        Linking CXX executable cmTC_af553
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af553.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast CMakeFiles/cmTC_af553.dir/src.cxx.o -o cmTC_af553 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-5Jdggd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:189 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-zVC2Bs"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-zVC2Bs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-zVC2Bs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ad48a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ad48a.dir/build.make CMakeFiles/cmTC_ad48a.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-zVC2Bs'
+        Building CXX object CMakeFiles/cmTC_ad48a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++14   -Wconversion -o CMakeFiles/cmTC_ad48a.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-zVC2Bs/src.cxx
+        Linking CXX executable cmTC_ad48a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad48a.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion CMakeFiles/cmTC_ad48a.dir/src.cxx.o -o cmTC_ad48a 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-zVC2Bs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:191 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-c4LcXh"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-c4LcXh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-c4LcXh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3025/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c3025.dir/build.make CMakeFiles/cmTC_c3025.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-c4LcXh'
+        Building CXX object CMakeFiles/cmTC_c3025.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -std=c++14   -Werror -o CMakeFiles/cmTC_c3025.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-c4LcXh/src.cxx
+        Linking CXX executable cmTC_c3025
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3025.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror CMakeFiles/cmTC_c3025.dir/src.cxx.o -o cmTC_c3025 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-c4LcXh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:195 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-KbT69q"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-KbT69q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-KbT69q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_435dd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_435dd.dir/build.make CMakeFiles/cmTC_435dd.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-KbT69q'
+        Building CXX object CMakeFiles/cmTC_435dd.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override -std=c++14   -Wsuggest-override -o CMakeFiles/cmTC_435dd.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-KbT69q/src.cxx
+        Linking CXX executable cmTC_435dd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_435dd.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override CMakeFiles/cmTC_435dd.dir/src.cxx.o -o cmTC_435dd 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-KbT69q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:197 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-k0i0ZK"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-k0i0ZK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-k0i0ZK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4316c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4316c.dir/build.make CMakeFiles/cmTC_4316c.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-k0i0ZK'
+        Building CXX object CMakeFiles/cmTC_4316c.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic -std=c++14   -pedantic -o CMakeFiles/cmTC_4316c.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-k0i0ZK/src.cxx
+        Linking CXX executable cmTC_4316c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4316c.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic CMakeFiles/cmTC_4316c.dir/src.cxx.o -o cmTC_4316c 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-k0i0ZK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:198 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-yFrYnZ"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-yFrYnZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-yFrYnZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62ac2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_62ac2.dir/build.make CMakeFiles/cmTC_62ac2.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-yFrYnZ'
+        Building CXX object CMakeFiles/cmTC_62ac2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -std=c++14   -pedantic-errors -o CMakeFiles/cmTC_62ac2.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-yFrYnZ/src.cxx
+        Linking CXX executable cmTC_62ac2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62ac2.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors CMakeFiles/cmTC_62ac2.dir/src.cxx.o -o cmTC_62ac2 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-yFrYnZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:199 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-b518vy"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-b518vy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-b518vy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08672/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_08672.dir/build.make CMakeFiles/cmTC_08672.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-b518vy'
+        Building CXX object CMakeFiles/cmTC_08672.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++14   -Wshorten-64-to-32 -o CMakeFiles/cmTC_08672.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-b518vy/src.cxx
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        gmake[1]: *** [CMakeFiles/cmTC_08672.dir/build.make:78: CMakeFiles/cmTC_08672.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-b518vy'
+        gmake: *** [Makefile:127: cmTC_08672/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:200 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-L7UDey"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-L7UDey"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-L7UDey'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c122/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c122.dir/build.make CMakeFiles/cmTC_8c122.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-L7UDey'
+        Building CXX object CMakeFiles/cmTC_8c122.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing -std=c++14   -fstrict-aliasing -o CMakeFiles/cmTC_8c122.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-L7UDey/src.cxx
+        Linking CXX executable cmTC_8c122
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c122.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing CMakeFiles/cmTC_8c122.dir/src.cxx.o -o cmTC_8c122 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-L7UDey'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:203 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-4bQeuL"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-4bQeuL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-4bQeuL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26704/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_26704.dir/build.make CMakeFiles/cmTC_26704.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-4bQeuL'
+        Building CXX object CMakeFiles/cmTC_26704.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++14   -Wno-deprecated-declarations -o CMakeFiles/cmTC_26704.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-4bQeuL/src.cxx
+        Linking CXX executable cmTC_26704
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26704.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations CMakeFiles/cmTC_26704.dir/src.cxx.o -o cmTC_26704 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-4bQeuL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:213 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-cK7S4Z"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-cK7S4Z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-cK7S4Z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f775d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f775d.dir/build.make CMakeFiles/cmTC_f775d.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-cK7S4Z'
+        Building CXX object CMakeFiles/cmTC_f775d.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++14   -Wno-deprecated -o CMakeFiles/cmTC_f775d.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-cK7S4Z/src.cxx
+        Linking CXX executable cmTC_f775d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f775d.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated CMakeFiles/cmTC_f775d.dir/src.cxx.o -o cmTC_f775d 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-cK7S4Z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:221 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-RCWyjd"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-RCWyjd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-RCWyjd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e1e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6e1e6.dir/build.make CMakeFiles/cmTC_6e1e6.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-RCWyjd'
+        Building CXX object CMakeFiles/cmTC_6e1e6.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++14   -Wstrict-aliasing -o CMakeFiles/cmTC_6e1e6.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-RCWyjd/src.cxx
+        Linking CXX executable cmTC_6e1e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e1e6.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing CMakeFiles/cmTC_6e1e6.dir/src.cxx.o -o cmTC_6e1e6 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-RCWyjd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:226 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-FwKbyU"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-FwKbyU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-FwKbyU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aea3f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aea3f.dir/build.make CMakeFiles/cmTC_aea3f.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-FwKbyU'
+        Building CXX object CMakeFiles/cmTC_aea3f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++14   -wd654 -o CMakeFiles/cmTC_aea3f.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-FwKbyU/src.cxx
+        c++: error: unrecognized command-line option '-wd654'
+        c++: error: unrecognized command-line option '-wd654'
+        gmake[1]: *** [CMakeFiles/cmTC_aea3f.dir/build.make:78: CMakeFiles/cmTC_aea3f.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-FwKbyU'
+        gmake: *** [Makefile:127: cmTC_aea3f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:227 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-uoqikg"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-uoqikg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-uoqikg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b1f6d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b1f6d.dir/build.make CMakeFiles/cmTC_b1f6d.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-uoqikg'
+        Building CXX object CMakeFiles/cmTC_b1f6d.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++14   -Wthread-safety -o CMakeFiles/cmTC_b1f6d.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-uoqikg/src.cxx
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        gmake[1]: *** [CMakeFiles/cmTC_b1f6d.dir/build.make:78: CMakeFiles/cmTC_b1f6d.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-uoqikg'
+        gmake: *** [Makefile:127: cmTC_b1f6d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build_full/_deps/benchmark-src/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:278 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-aFUJFK"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-aFUJFK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-aFUJFK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_49bdf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_49bdf.dir/build.make CMakeFiles/cmTC_49bdf.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-aFUJFK'
+        Building CXX object CMakeFiles/cmTC_49bdf.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -std=c++14   --coverage -o CMakeFiles/cmTC_49bdf.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-aFUJFK/src.cxx
+        Linking CXX executable cmTC_49bdf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49bdf.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage CMakeFiles/cmTC_49bdf.dir/src.cxx.o -o cmTC_49bdf 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-aFUJFK'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build_full/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:308 (cxx_feature_check)"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a6ec/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9a6ec.dir/build.make CMakeFiles/cmTC_9a6ec.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_9a6ec.dir/std_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_9a6ec.dir/std_regex.cpp.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/std_regex.cpp
+        Linking CXX executable cmTC_9a6ec
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a6ec.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_9a6ec.dir/std_regex.cpp.o -o cmTC_9a6ec 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build_full/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:309 (cxx_feature_check)"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cd3b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cd3b1.dir/build.make CMakeFiles/cmTC_cd3b1.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_cd3b1.dir/gnu_posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_cd3b1.dir/gnu_posix_regex.cpp.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/gnu_posix_regex.cpp
+        /home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/gnu_posix_regex.cpp:1:10: fatal error: gnuregex.h: No such file or directory
+            1 | #include <gnuregex.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_cd3b1.dir/build.make:78: CMakeFiles/cmTC_cd3b1.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_cd3b1/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build_full/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:310 (cxx_feature_check)"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7e6b6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7e6b6.dir/build.make CMakeFiles/cmTC_7e6b6.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_7e6b6.dir/posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_7e6b6.dir/posix_regex.cpp.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_7e6b6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e6b6.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_7e6b6.dir/posix_regex.cpp.o -o cmTC_7e6b6 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build_full/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:319 (cxx_feature_check)"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_23f18/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_23f18.dir/build.make CMakeFiles/cmTC_23f18.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_23f18.dir/steady_clock.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_23f18.dir/steady_clock.cpp.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_23f18
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23f18.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_23f18.dir/steady_clock.cpp.o -o cmTC_23f18 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:322 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-VJp3C2"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-VJp3C2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-VJp3C2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d3619/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d3619.dir/build.make CMakeFiles/cmTC_d3619.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-VJp3C2'
+        Building CXX object CMakeFiles/cmTC_d3619.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++14 -o CMakeFiles/cmTC_d3619.dir/src.cxx.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-VJp3C2/src.cxx
+        Linking CXX executable cmTC_d3619
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3619.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_d3619.dir/src.cxx.o -o cmTC_d3619 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeScratch/TryCompile-VJp3C2'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build_full/_deps/benchmark-src/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "build_full/_deps/benchmark-src/CMakeLists.txt:323 (cxx_feature_check)"
+    directories:
+      source: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+      binary: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/catch2-src/extras;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/Modules;/home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_717a3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_717a3.dir/build.make CMakeFiles/cmTC_717a3.dir/build
+        gmake[1]: Entering directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_717a3.dir/pthread_affinity.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_717a3.dir/pthread_affinity.cpp.o -c /home/blaze/Blaze/Projects/sqrt_bench/build_full/_deps/benchmark-src/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_717a3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_717a3.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_717a3.dir/pthread_affinity.cpp.o -o cmTC_717a3 
+        gmake[1]: Leaving directory '/home/blaze/Blaze/Projects/sqrt_bench/build_full/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+      exitCode: 0
+...

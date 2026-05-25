@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsqrt_bench.a CMakeFiles/sqrt_bench.dir/src/sqrt_bench.cpp.o
+/usr/bin/ranlib libsqrt_bench.a

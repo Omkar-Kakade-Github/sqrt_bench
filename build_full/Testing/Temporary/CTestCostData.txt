@@ -1,0 +1,9 @@
+float 0 0
+double 0 0
+float 0 0
+double 0 0
+float methods validate against std::sqrt 1 0.00417275
+double methods validate against std::sqrt 1 0.00356126
+float methods reject non-positive and non-finite inputs 1 0.00153468
+double methods reject non-positive and non-finite inputs 1 0.00106206
+---
