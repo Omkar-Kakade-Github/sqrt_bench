@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/sqrt_bench_report.dir/apps/sqrt_bench_report.cpp.o -o sqrt_bench_report  libsqrt_bench.a 
